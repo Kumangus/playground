@@ -5,9 +5,9 @@ Use Swift operator overloading to blend two UIColors with the addition operator:
 ```swift
 import UIKit
 
-@infix func + (left: UIColor, right: UIColor) -> UIColor {
-    var leftRGBA = CGFloat[](count: 4, repeatedValue: 0.0)
-    var rightRGBA = CGFloat[](count: 4, repeatedValue: 0.0)
+func + (left: UIColor, right: UIColor) -> UIColor {
+    var leftRGBA = [CGFloat](count: 4, repeatedValue: 0.0)
+    var rightRGBA = [CGFloat](count: 4, repeatedValue: 0.0)
 
     left.getRed(&leftRGBA[0], green: &leftRGBA[1], blue: &leftRGBA[2], alpha: &leftRGBA[3])
     right.getRed(&rightRGBA[0], green: &rightRGBA[1], blue: &rightRGBA[2], alpha: &rightRGBA[3])
