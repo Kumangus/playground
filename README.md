@@ -1,4 +1,4 @@
-# Playground [![Build Status](https://travis-ci.org/jas/playground.svg?branch=master)](https://travis-ci.org/jas/playground)
+# Playground [![Circle CI](https://circleci.com/gh/jas/playground.svg?style=svg)](https://circleci.com/gh/jas/playground)
 
 > Create Xcode Playgrounds for the Swift programming language with rich documentation generated from Markdown
 
@@ -49,7 +49,7 @@ Usage: playground <paths>... [options]
 
 paths     Markdown files(s), or directory containing Markdown files,
           from which to build the Playground(s).
-          
+
           The Markdown file(s) must have one of these common Markdown
           file extensions: .md .markdown .mdown .mkdn .mkd
 
